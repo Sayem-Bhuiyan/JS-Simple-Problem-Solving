@@ -7,6 +7,9 @@ function gemsToDaimond(a, b, c){
     else if (a < 0 || b < 0 || c < 0){
         return "Please provide me all postive numbers";
     }
+    else if ( a%1 !== 0 || b%1 !== 0 || c%1 !== 0){
+        return 'Please provide me all Integer number';
+    }
     else {
         const friend1 = 21;
         const friend2 = 32;
@@ -22,4 +25,4 @@ function gemsToDaimond(a, b, c){
     }
     
 }
-console.log(gemsToDaimond(1, 1, 1))
+console.log(gemsToDaimond(1, 5, 1))
